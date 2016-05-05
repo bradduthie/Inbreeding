@@ -1,4 +1,4 @@
-CXX    = icc
+CXX    = gcc
 CFLAGS = -fopenmp -ansi -Wall -pedantic -std=c99
 
 RunInbr:	InMult.o Inbreed.o retain.o mortality.o parents.o babies.o mateselect.o 		deadbottom.o Rbuild.o vectorrank.o arraysort2D.o landscape.o randnormINT.o 			sumstats.o randnorm.o randunif.o FFT.o as183.o inbrdep.o
