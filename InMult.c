@@ -40,7 +40,7 @@ int main(void){
     mu     = 0.001;  /* Mutation rate of any given allele                                 */
     hval   = 0.00;   /* The degree of partial dominance (0 = wild type completely dom)    */
     Kind   = 1;      /* Kin recognition (1 = recognise all; 0 = recognise only siblings)  */
-    xlen   = 15;     /* Spatial x and y dimension -- carrying capacity = xlen*xlen        */
+    xlen   = 10;     /* Spatial x and y dimension -- carrying capacity = xlen*xlen        */
     /*                                                                                    */
     /* ===================================================================================*/
     /* Genome attributes of individuals                                                   */
@@ -54,7 +54,7 @@ int main(void){
     /* ===================================================================================*/
     /* Simulation details                                                                 */
     /* ===================================================================================*/
-    rep        = 1;    /* Simulations run                                                */
+    rep        = 1;     /* Simulations run                                                */
     Pedi       = 0;     /* Print last rep's pedigree? (0:no, 1:yes) WARNING: 200Mb file   */
     Beta1ch    = 0.000; /* How much should Beta1 change each rep?                         */ 
     /*                                                                                    */
@@ -92,29 +92,7 @@ int main(void){
 
         i++;
 
-        /*if(i == 6 || i == 30){
-            Beta1 = 0.0;
-            cost  = 0.0025;
-        }
-        if(i == 12 || i == 36){
-            Beta1 = 0.0;
-            cost  = 0.005;
-        }
-        if(i == 18 || i == 42){
-            Beta1 = 0.0;
-            cost  = 0.01;
-        }
-        if(i == 24){
-            DOM   = 1;
-            Beta1 = 0.0;
-            cost  = 0.0;
-        } */
-
     }
     return 0;
 }
-
-
-
-
 
